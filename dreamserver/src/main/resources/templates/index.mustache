@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>34기 NOW SOPT에서 얻어가고 싶은 것은?</title>
+    <meta property="og:title" content="34기 NOW SOPT에서 얻어가고 싶은 것은?" />
+    <meta property="og:image" content="../static/assets/thumbnail.png" />
+    <link rel="icon" href = "../static/assets/camera_2.png" />
+</head>
+
+<body>
+<div class ="containter">
+    <div class = "input-box">
+        <h1>파트와 이름을 입력해 주세요</h1>
+
+        <form method="POST" action="/submit" enctype="multipart/form-data">
+            <label for="userName">
+                <input name="userName" id = "userName" class = "box"  type= "text" placeholder="이름">
+            </label>
+
+            <select name="part" class = "box" id = "dropdown">
+                <option value ="" disabled selected>파트</option>
+                <option value = "기획">기획</option>
+                <option value = "디자인">디자인</option>
+                <option value = "안드로이드">안드로이드</option>
+                <option value = "iOS">iOS</option>
+                <option value = "웹">웹</option>
+                <option value = "서버">서버</option>
+            </select>
+
+            <button id = "submitButton" > 입장하기 </button>
+
+        </form>
+
+
+
+
+    </div>
+</div>
+</body>
