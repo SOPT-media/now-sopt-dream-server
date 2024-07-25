@@ -1,0 +1,127 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Pretendard Variable", 'Apple SD Gothic Neo', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0% 5% 0% 5%;
+    height: 100vh;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem;
+    background-color: #263058;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-decoration: white;
+    padding: 0px 21px;
+    flex-direction: column;
+}
+
+.input-box {
+    background-color: #263058;
+    padding: 20px 20px 40px 20px;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+    width: 90vw;
+    flex-shrink: 0;
+    align-content: center;
+    text-align: center;
+    background-image: url(../assets/chemeLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90vw;
+}
+
+button {
+    background-color: #FF8FCB;
+    color: #263058;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.25px;
+    padding: 0.75rem 1.5rem;
+    width: 80%;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+button:disabled {
+    background-color: #C3C3C3;
+    color: #737373;
+}
+
+h1 {
+    color: var(--icon-color, #FFF);
+    text-align: center;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.35px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.box {
+    width: 80%;
+    max-width: 500px;
+    height: 9vh;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    flex-shrink: 0;
+    color: #263058;
+    background: #FDFDFD;
+    font-family: Pretendard;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+    letter-spacing: -0.3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    select.box, input.box {
+        font-size: 0.875rem;
+        height: 2.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
