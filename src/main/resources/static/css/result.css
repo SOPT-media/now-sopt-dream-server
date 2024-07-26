@@ -43,30 +43,39 @@ h1 {
     margin: 0;
 }
 
-.name-text, .part-text, .dreamMessage-size {
+.name-size, .part-size, .dreamMessage-size {
     position: absolute;
 }
 
-.part-text {
-    top: 12px;
-    left: 170px;
-    font-size: 15pt;
-}
-
-.name-text {
-    top: 12px;
-    right: 40px;
-    font-size: 15pt;
-}
-
-.dreamMessage-text {
+.part-text, .name-text, .dreamMessage-text {
     height: 100%;
     width: 100%;
-    font-size: 1rem;
-    word-break: keep-all;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.part-text, .name-text {
+    font-size: 1.2rem;
+}
+
+.dreamMessage-text {
+    word-break: keep-all;
+    font-size: 1rem;
+}
+.part-size, .name-size{
+    top: 7%;
+    height: 9%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-size {
+    left: 42%;
+}
+.name-size {
+    right: 7%;
 }
 
 .dreamMessage-size {
@@ -77,3 +86,4 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
