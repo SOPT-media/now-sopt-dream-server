@@ -24,14 +24,13 @@ body {
 }
 
 .message {
-    width: 90vw;
-    height: 90vh;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .dream-image {
-    position: relative;
     width: 90vw;
 }
 
@@ -39,44 +38,42 @@ h1 {
     color: #263058;
     text-align: center;
     font-family: Pretendard;
-    position: absolute;
-    z-index: 1; /* 텍스트가 이미지 위에 오도록 설정 */
+    z-index: 1;
+    padding: 0;
+    margin: 0;
 }
 
-.name-text {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
+.name-text, .part-text, .dreamMessage-size {
+    position: absolute;
 }
 
 .part-text {
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
+    top: 12px;
+    left: 170px;
+    font-size: 15pt;
+}
+
+.name-text {
+    top: 12px;
+    right: 40px;
+    font-size: 15pt;
 }
 
 .dreamMessage-text {
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
     font-size: 1rem;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 600px) {
-    .name-text {
-        font-size: 1.5rem;
-        top: 5%;
-    }
-
-    .part-text {
-        font-size: 1.25rem;
-        top: 20%;
-    }
-
-    .dreamMessage-text {
-        font-size: 0.875rem;
-        bottom: 5%;
-    }
+.dreamMessage-size {
+    bottom: 15%;
+    left: 15%;
+    height: 17%;
+    width: 54%;
+    justify-content: center;
+    align-items: center;
 }
