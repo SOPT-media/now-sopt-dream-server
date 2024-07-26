@@ -12,4 +12,16 @@ class HomeController {
         return "index"
     }
 
+    @GetMapping("/now")
+    fun now(): String {
+        return "now"
+    }
+
+    @GetMapping("/cheme")
+    fun cheme(): String {
+        return "cheme"
+    }
+
+
+
 }

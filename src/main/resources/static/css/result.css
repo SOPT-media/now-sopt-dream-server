@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .message {
@@ -87,3 +88,23 @@ h1 {
     align-items: center;
 }
 
+
+button {
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+    border-radius:10px;
+    font-family: Pretendard;
+    font-weight: 900;
+    height: 30px;
+}
+
+.cheme {
+    color: #9BE1FD;
+    background-color: #FF8FCB;
+}
+
+.now {
+    color: white;
+    background-color:#BDEC00;
+}
